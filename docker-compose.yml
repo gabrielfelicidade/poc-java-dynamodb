@@ -1,0 +1,12 @@
+version: '3'
+services:
+  localstack:
+    image: localstack/localstack:latest
+    ports:
+      - '4569:4569'
+      - '8055:8080'
+    environment:
+      - SERVICES=dynamodb
+      - DEBUG=1
+    volumes:
+      - '/var/run/docker.sock:/var/run/docker.sock'
