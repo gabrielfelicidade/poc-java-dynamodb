@@ -1,0 +1,7 @@
+amazon:
+  aws:
+    accesskey: x
+    secretkey: x
+    region: us-east-1
+  dynamodb:
+    port: 12333
